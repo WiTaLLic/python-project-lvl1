@@ -4,4 +4,3 @@ def reviews(random_number, respons):
         print('Correct!')
     elif random_number % 2 != 0 and respons == 'no':
         print('Correct!')
-    
