@@ -18,20 +18,20 @@ def game(NUMBER_QUESTIONS, names):
     respons = plaer_respons()
 
     if random_number % 2 != 0 and respons == 'yes':
-        print(f"'yes' is wrong answer ;(. Correct answer was 'no'. \
-            Let's try again, {names}!")
+        print(f"'yes' is wrong answer ;(. Correct answer was 'no'.)\
+        Let's try again, {names}!")
         return
     elif random_number % 2 == 0 and respons == 'no':
-        print(f"'no' is wrong answer ;(. Correct answer was 'yes'. \
-            Let's try again, {names}!")
+        print(f"'no' is wrong answer ;(. Correct answer was 'yes'.)\
+        Let's try again, {names}!")
         return
     elif random_number % 2 == 0 and respons != 'yes':
-        print(f"'{respons}' is wrong answer ;(. Correct answer was 'yes'. \
-            Let's try again, {names}!")
+        print(f"'{respons}' is wrong answer ;(. Correct answer was 'yes'.)\
+        Let's try again, {names}!")
         return
     elif random_number % 2 != 0 and respons != 'no':
-        print(f"'{respons}' is wrong answer ;(. Correct answer was 'no'. \
-            Let's try again, {names}!")
+        print(f"'{respons}' is wrong answer ;(. Correct answer was 'no'.)\
+        Let's try again, {names}!")
         return
     reviews(random_number, respons)
     game(NUMBER_QUESTIONS, names)
