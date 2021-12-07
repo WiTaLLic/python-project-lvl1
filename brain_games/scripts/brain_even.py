@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from brain_games.salute import welcom_user
 from brain_games.games import game
+from brain_games.conditions_games import conditions_even
 
 
 NUMBER_QUESTIONS = 3
@@ -11,7 +12,7 @@ def main():
 
     names = welcom_user()
 
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    conditions_even()
 
     game(NUMBER_QUESTIONS, names)
 
