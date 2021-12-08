@@ -11,3 +11,8 @@ def conditions_calc():
 def condition_gcd():
     """Сonditions of the game-gcd"""
     print('Find the greatest common divisor of given numbers.')
+
+
+def condition_progression():
+    """Сonditions of the game-progression"""
+    print('What number is missing in the progression?')
