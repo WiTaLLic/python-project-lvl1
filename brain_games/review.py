@@ -24,5 +24,16 @@ def reviews_gcd(respons, gcd_result, names):
         return True
     else:
         print(f"'{respons}' is  wrong answer ;(. Correct answer was '{gcd_result}'.\
-            \nLet's try again, {names}!")
+        \nLet's try again, {names}!")
+        return False
+
+
+def reviews_progression(respons, hidden_number, names):
+    """Сorrect answer game-progression"""
+    if respons == str(hidden_number):
+        print('Correct!')
+        return True
+    else:
+        print(f"'{respons}' is  wrong answer ;(. Correct answer was '{hidden_number}'.\
+        \nLet's try again, {names}!")
         return False
