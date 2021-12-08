@@ -3,5 +3,5 @@ import prompt
 
 def plaer_respons():
     """The function outputs the player's response """
-    respon = prompt.string('\nYour answer: ')
+    respon = prompt.string('Your answer: ')
     return(respon)
