@@ -22,3 +22,4 @@ def question_prograssion(random_START, STOP, random_STEP, hidden_number):
             print('..', end=' ')
         else:
             print(i, end=' ')
+    print()
