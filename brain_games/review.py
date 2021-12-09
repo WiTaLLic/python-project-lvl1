@@ -45,7 +45,7 @@ def reviews_prime(respons, prime_number, names):
         print('Correct!')
         return True
 
-    elif (respons == 'yes' | prime_number is False) or (respons != 'no' and prime_number is False):
+    elif (respons == 'yes' and prime_number is False) or (respons != 'no' and prime_number is False):
         print(f"'{respons}' is  wrong answer ;(. Correct answer was 'no'.\
         \nLet's try again, {names}!")
         return False
