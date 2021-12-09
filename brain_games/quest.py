@@ -23,3 +23,8 @@ def question_prograssion(random_START, STOP, random_STEP, hidden_number):
         else:
             print(i, end=' ')
     print()
+
+
+def question_prime(random_number):
+    """Output of the question """
+    print(f"Question: {random_number}")
