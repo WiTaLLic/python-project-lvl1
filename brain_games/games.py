@@ -1,8 +1,11 @@
 from brain_games.quest import question, question_calc
 from brain_games.quest import question_gcd, question_prograssion
+from brain_games.quest import question_prime
 from brain_games.respons import plaer_respons
 from brain_games.review import reviews, reviews_calc, reviews_progression
+from brain_games.review import reviews_prime
 from brain_games.math_operation import operation, operation_gcd
+from brain_games.math_operation import operation_prime
 from random import choice, randint, randrange
 
 
@@ -94,7 +97,7 @@ def game_gcd(NUMBER_QUESTIONS, names):
 
 
 def game_progression(NUMBER_QUESTIONS, names):
-    """ Start game-gcd """
+    """ Start game-progression """
     STOP = 30
 
     random_START = randint(0, 5)
@@ -115,3 +118,25 @@ def game_progression(NUMBER_QUESTIONS, names):
         return
 
     game_progression(NUMBER_QUESTIONS, names)
+
+
+def game_prime(NUMBER_QUESTIONS, names):
+    """ Start game-prime"""
+
+    random_number = randint(1, 100)
+
+    if NUMBER_QUESTIONS < 1:
+        print(f"Congratulations, {names}!")
+        return
+
+    NUMBER_QUESTIONS -= 1
+
+    question_prime(random_number)
+    respons = plaer_respons()
+    prime_number = operation_prime(random_number)
+    correct_input = reviews_prime(respons, prime_number, names)
+
+    if correct_input is not True:
+        return
+
+    game_prime(NUMBER_QUESTIONS, names)
