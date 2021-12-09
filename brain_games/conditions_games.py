@@ -16,3 +16,8 @@ def condition_gcd():
 def condition_progression():
     """Сonditions of the game-progression"""
     print('What number is missing in the progression?')
+
+
+def condition_prime():
+    """Сonditions of the game-praime"""
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
