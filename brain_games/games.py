@@ -98,7 +98,7 @@ def game_gcd(NUMBER_QUESTIONS, names):
 
 def game_progression(NUMBER_QUESTIONS, names):
     """ Start game-progression """
-    STOP = 30
+    STOP = 35
 
     random_START = randint(0, 5)
     random_STEP = randint(1, 5)
