@@ -3,9 +3,9 @@ def question(random_number):
     print(f"Question: {random_number}")
 
 
-def question_calc(random_number_one, random_math_operator, random_number_two):
+def question_calc(number_one, math_operator, number_two):
     """Random selection of two operands and an operator"""
-    print(f"Question: {random_number_one} {random_math_operator} {random_number_two}")
+    print(f"Question: {number_one} {math_operator} {number_two}")
 
 
 def question_gcd(random_number_one, random_number_two):
