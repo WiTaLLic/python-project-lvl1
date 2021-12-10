@@ -39,18 +39,18 @@ def reviews_progression(respons, hidden_number, names):
         return False
 
 
-def reviews_prime(respons, prime_number, names):
+def reviews_prime(respons, number, names):
     """Сorrect answer game-prime"""
-    if (respons == 'yes' and prime_number is True) or (respons == 'no' and prime_number is False):
+    if (respons == 'yes' and number) or (respons == 'no' and number is False):
         print('Correct!')
         return True
 
-    elif (respons == 'yes' and prime_number is False) or (respons != 'no' and prime_number is False):
+    elif (respons == 'yes' and not number) or (respons != 'no' and not number):
         print(f"'{respons}' is  wrong answer ;(. Correct answer was 'no'.\
         \nLet's try again, {names}!")
         return False
 
-    elif (respons == 'no' and prime_number is True) or (respons != 'yes' and prime_number is True):
+    elif (respons == 'no' and number) or (respons != 'yes' and number):
         print(f"'{respons}' is  wrong answer ;(. Correct answer was 'yes'.\
         \nLet's try again, {names}!")
         return False
