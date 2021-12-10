@@ -15,7 +15,7 @@ def question_gcd(random_number_one, random_number_two):
 
 def question_prograssion(random_START, STOP, random_STEP, hidden_number):
     """Аrithmetic progression output """
-    print('Question: ', end=' ')
+    print('Question:', end=' ')
     for i in range(random_START, STOP, random_STEP):
         if i == hidden_number:
             print('..', end=' ')
