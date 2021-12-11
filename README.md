@@ -6,3 +6,4 @@ https://asciinema.org/a/5RMhPkBcuGJ8DTdz124nmVqEG
 https://asciinema.org/a/QB1JDIKIqIPEo6HSfPUBZFqaT
 https://asciinema.org/a/OUbTQW4n5mVY9HcQ6mdF2xlWs
 https://asciinema.org/a/dzAy3UeSSU1dAvoA8E1ZzomM3
+![example workflow](https://github.com/W-i-T/python-project-lvl1.git)
