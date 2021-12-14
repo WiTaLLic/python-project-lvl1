@@ -1,4 +1,4 @@
-def reviews(random_number, respons):
+def reviews(random_number, respons, names):
     """Сorrect answer"""
     if random_number % 2 == 0 and respons == 'yes':
         print('Correct!')
