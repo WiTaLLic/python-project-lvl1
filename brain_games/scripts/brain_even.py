@@ -1,21 +1,22 @@
-#!/usr/bin/env python
-from brain_games.salute import welcom_user
-from brain_games.games import game
-from brain_games.conditions_games import conditions_even
+from brain_games.games.quest import question
+from brain_games.games.respons import plaer_respons
+from brain_games.games.review import reviews
+from random import randint
 
 
-NUMBER_QUESTIONS = 3
+def game(NUMBER_QUESTIONS, names):
+    """ Start game """
+    random_number = randint(0, 100)
 
+    
+    
 
-def main():
-    print("Welcom to the Brain Games!")
+    NUMBER_QUESTIONS -= 1
 
-    names = welcom_user()
+    question(random_number)
+    
+    respons = plaer_respons()
 
-    conditions_even()
+    reviews(random_number, respons, names)
 
     game(NUMBER_QUESTIONS, names)
-
-
-if __name__ == '__main__':
-    main()
