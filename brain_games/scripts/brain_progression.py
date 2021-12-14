@@ -1,21 +1,28 @@
-#!/usr/bin/env python
-from brain_games.salute import welcom_user
-from brain_games.games import game_progression
-from brain_games.conditions_games import condition_progression
+from brain_games.games.quest import question_prograssion
+from brain_games.games.respons import plaer_respons
+from brain_games.games.review import reviews_progression
+from random import randint, randrange
 
 
-NUMBER_QUESTIONS = 3
+def game_progression(NUMBER_QUESTIONS, names):
+    """ Start game-progression """
+    STOP = 35
 
+    random_START = randint(0, 5)
+    random_STEP = randint(1, 5)
+    hidden_number = randrange(random_START, STOP, random_STEP)
 
-def main():
-    print("Welcom to the Brain Games!")
+    if NUMBER_QUESTIONS < 1:
+        print(f"Congratulations, {names}!")
+        return
 
-    names = welcom_user()
+    NUMBER_QUESTIONS -= 1
 
-    condition_progression()
+    question_prograssion(random_START, STOP, random_STEP, hidden_number)
+    respons = plaer_respons()
+    correct_input = reviews_progression(respons, hidden_number, names)
+
+    if correct_input is not True:
+        return
 
     game_progression(NUMBER_QUESTIONS, names)
-
-
-if __name__ == '__main__':
-    main()
