@@ -1,21 +1,27 @@
-#!/usr/bin/env python
-from brain_games.salute import welcom_user
-from brain_games.games import game_prime
-from brain_games.conditions_games import condition_prime
+from brain_games.games.quest import question_prime
+from brain_games.games.respons import plaer_respons
+from brain_games.games.review import reviews_prime
+from brain_games.games.math_operation import operation_prime
+from random import randint
 
 
-NUMBER_QUESTIONS = 3
+def game_prime(NUMBER_QUESTIONS, names):
+    """ Start game-prime"""
 
+    random_number = randint(1, 100)
 
-def main():
-    print("Welcom to the Brain Games!")
+    if NUMBER_QUESTIONS < 1:
+        print(f"Congratulations, {names}!")
+        return
 
-    names = welcom_user()
+    NUMBER_QUESTIONS -= 1
 
-    condition_prime()
+    question_prime(random_number)
+    respons = plaer_respons()
+    prime_number = operation_prime(random_number)
+    correct_input = reviews_prime(respons, prime_number, names)
+
+    if correct_input is not True:
+        return
 
     game_prime(NUMBER_QUESTIONS, names)
-
-
-if __name__ == '__main__':
-    main()
