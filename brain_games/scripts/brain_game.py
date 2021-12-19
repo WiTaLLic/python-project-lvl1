@@ -3,9 +3,9 @@
 
 
 #def main():
-    print("Welcom to the Brain Games!")
-    welcom_user()
+    #print("Welcom to the Brain Games!")
+    #welcom_user()
 
 
 #if __name__ == '__main__':
-    main()
+   # main()
