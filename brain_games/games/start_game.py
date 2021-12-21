@@ -1,3 +1,4 @@
+from brain_games.scripts.brain_game import game_brain
 from brain_games.scripts.brain_calc import game_calc
 from brain_games.scripts.brain_even import game
 from brain_games.scripts.brain_gcd import game_gcd
@@ -7,6 +8,8 @@ from brain_games.scripts.brain_progression import game_progression
 
 def starting_game(name_game, NUMBER_QUESTIONS, names):
     """Starting the selected game """
+    if name_game == 'brain-game':
+        return game_brain(NUMBER_QUESTIONS, names)
     if name_game == 'brain-even':
         return game(NUMBER_QUESTIONS, names)
     if name_game == 'brain-calc':
