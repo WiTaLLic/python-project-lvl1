@@ -1,11 +1,12 @@
-#!/usr/bin/env python
-#from brain_games.games.salute import welcom_user
 
 
-#def main():
-    #print("Welcom to the Brain Games!")
-    #welcom_user()
+
+def game_brain(NUMBER_QUESTIONS, names):
+    """ Start game """
+    
+
+    if NUMBER_QUESTIONS == 3:
+        return
 
 
-#if __name__ == '__main__':
-   # main()
+    game_brain(NUMBER_QUESTIONS, names)
