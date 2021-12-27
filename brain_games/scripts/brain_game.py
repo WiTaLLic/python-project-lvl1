@@ -4,4 +4,4 @@ def game_brain(NUMBER_QUESTIONS, names):
         return
 
 
-    game_brain(NUMBER_QUESTIONS, names)
+    #game_brain(NUMBER_QUESTIONS, names)
