@@ -1,7 +1,7 @@
 def game_brain(NUMBER_QUESTIONS, names):
     """ Start game """
-    if NUMBER_QUESTIONS == 3:
+    if NUMBER_QUESTIONS == 1:
         return
 
 
-    #game_brain(NUMBER_QUESTIONS, names)
+    game_brain(NUMBER_QUESTIONS, names)
