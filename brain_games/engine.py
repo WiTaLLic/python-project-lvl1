@@ -1,6 +1,7 @@
 import prompt
 from brain_games.games.calc import *
 from brain_games.games.even import *
+from brain_games.games.gcd import *
 
 def start(game):
 
@@ -18,6 +19,10 @@ def start(game):
     if game == 'even':
         conditions_even()
         game_even(NUMBER_QUESTIONS, name)
+
+    if game == 'gcd':
+        condition_gcd()
+        game_gcd(NUMBER_QUESTIONS, name)
     
     
 
