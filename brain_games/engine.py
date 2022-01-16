@@ -2,6 +2,7 @@ import prompt
 from brain_games.games.calc import *
 from brain_games.games.even import *
 from brain_games.games.gcd import *
+from brain_games.games.progression import *
 
 def start(game):
 
@@ -23,6 +24,10 @@ def start(game):
     if game == 'gcd':
         condition_gcd()
         game_gcd(NUMBER_QUESTIONS, name)
+
+    if game == 'progression':
+        condition_progression()
+        game_progression(NUMBER_QUESTIONS, name)
     
     
 
