@@ -2,20 +2,6 @@ import prompt
 from random import randint
 
 
-NUMBER_QUESTIONS = 3
-
-
-def welcom_to_game():
-    print('Welcome to the Brain Games!')
-
-
-def welcom_user():
-    """The function asks for user data"""
-    name = prompt.string('May I have your name?')
-    print(f"Hello, {name}!")
-    return name
-
-
 def conditions_even():
     """Сonditions of the game-even"""
     print('Answer "yes" if the number is even, otherwise answer "no"')
@@ -50,7 +36,7 @@ def reviews(random_number, respons, names):
         return False
 
 
-def game(NUMBER_QUESTIONS, names):
+def game_even(NUMBER_QUESTIONS, names):
     """ Start game """
     random_number = randint(0, 100)
 
@@ -69,4 +55,4 @@ def game(NUMBER_QUESTIONS, names):
     if corect_input is not True:
         return
 
-    game(NUMBER_QUESTIONS, names)
+    game_even(NUMBER_QUESTIONS, names)
