@@ -3,6 +3,7 @@ from brain_games.games.calc import *
 from brain_games.games.even import *
 from brain_games.games.gcd import *
 from brain_games.games.progression import *
+from brain_games.games.prime import *
 
 def start(game):
 
@@ -28,6 +29,10 @@ def start(game):
     if game == 'progression':
         condition_progression()
         game_progression(NUMBER_QUESTIONS, name)
+
+    if game == 'prime':
+        condition_prime()
+        game_prime(NUMBER_QUESTIONS, name)
     
     
 
