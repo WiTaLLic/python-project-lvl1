@@ -2,20 +2,9 @@ import prompt
 from random import randint, choice
 
 
-def welcom_to_game():
-    print('Welcome to the Brain Games!')
-
-
-def welcom_user():
-    """The function asks for user data"""
-    name = prompt.string('May I have your name?')
-    print(f"Hello, {name}!")
-    return name
-
-
 def conditions_calc():
     """Сonditions of the game-calc"""
-    print('What is the result of the expression?')
+    return print('What is the result of the expression?')
 
 
 def question_calc(number_one, math_operator, number_two):
@@ -57,6 +46,7 @@ def game_calc(NUMBER_QUESTIONS, names):
     random_math_operator = choice('+-*')
     random_number_two = randint(0, 100)
 
+    
     if NUMBER_QUESTIONS < 1:
         print(f"Congratulations, {names}!")
         return
