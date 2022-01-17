@@ -50,7 +50,7 @@ def reviews_prime(respons, number, names):
 def game_prime(NUMBER_QUESTIONS, names):
     """ Start game-prime"""
 
-    random_number = randint(1, 100)
+    random_number = randint(2, 100)
 
     if NUMBER_QUESTIONS < 1:
         print(f"Congratulations, {names}!")
