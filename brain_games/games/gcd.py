@@ -3,7 +3,7 @@ from random import randint
 
 
 def condition_gcd():
-    """Сonditions of the game-gcd"""
+    """Сonditions of the game_gcd"""
     print('Find the greatest common divisor of given numbers.')
 
 
