@@ -18,6 +18,7 @@ def operation_prime(random_number):
     else:
         return False
 
+
 def question_prime(random_number):
     """Output of the question """
     print(f"Question: {random_number}")
