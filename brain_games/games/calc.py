@@ -46,7 +46,6 @@ def game_calc(NUMBER_QUESTIONS, names):
     random_math_operator = choice('+-*')
     random_number_two = randint(0, 100)
 
-    
     if NUMBER_QUESTIONS < 1:
         print(f"Congratulations, {names}!")
         return
