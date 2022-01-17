@@ -1,9 +1,11 @@
 import prompt
-from brain_games.games.calc import *
-from brain_games.games.even import *
-from brain_games.games.gcd import *
-from brain_games.games.progression import *
-from brain_games.games.prime import *
+from brain_games.games.calc import conditions_calc, game_calc
+from brain_games.games.even import conditions_even, game_even
+from brain_games.games.gcd import condition_gcd, game_gcd
+from brain_games.games.progression import condition_progression
+from brain_games.games.progression import game_progression
+from brain_games.games.prime import condition_prime, game_prime
+
 
 def start(game):
 
@@ -15,7 +17,7 @@ def start(game):
     print(f"Hello, {name}!")
 
     if game == 'calc':
-        conditions_calc()        
+        conditions_calc()
         game_calc(NUMBER_QUESTIONS, name)
 
     if game == 'even':
@@ -33,6 +35,3 @@ def start(game):
     if game == 'prime':
         condition_prime()
         game_prime(NUMBER_QUESTIONS, name)
-    
-    
-
