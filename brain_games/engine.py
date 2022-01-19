@@ -7,12 +7,11 @@ from brain_games.games.progression import game_progression
 from brain_games.games.prime import condition_prime, game_prime
 
 
-
 def start(game):
 
     NUMBER_QUESTIONS = 3
 
-    print('Welcome to the Brain Games!')  
+    print('Welcome to the Brain Games!') 
 
     name = prompt.string('May I have your name?')
     print(f"Hello, {name}!")
