@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: grantmcconnaughey/lintly-flake8-github-action@v1.0
+        if: github.event_name == 'pull_request'
         with:
           # The GitHub API token to create reviews with
           token: ${{ secrets.GITHUB_TOKEN }}
