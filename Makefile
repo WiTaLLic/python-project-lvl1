@@ -11,5 +11,5 @@ package-install:
 make lint:
 	poetry run flake8 brain_games
 uninstall:
-	pip unistall hexlet-code
+	pip uninstall hexlet-code
 	
